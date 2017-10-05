@@ -12,12 +12,18 @@ body {
   padding: 50px 20px;
   background-color: rgb(234, 234, 234);
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 .resume {
@@ -56,15 +62,14 @@ header {
 
 .main {
   display: flex;
-  .left, .right{
-    padding: 20px;
-  }
   .left {
-    flex: 3.5;
+    padding: 10px;
+    flex: 3;
     background-color: $lightColor;
   }
   .right {
-    flex: 6;
+    flex: 7;
+    padding: 30px;
   }
 }
 
@@ -81,6 +86,7 @@ header {
   }
 }
 
+// left
 .left {
   .profile-img {
     display: block;
@@ -94,8 +100,8 @@ header {
     }
   }
   .block{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -118,6 +124,157 @@ header {
       p {
         font-size: 14px;
         margin: 0;
+      }
+    }
+  }
+}
+
+// Link
+.links {
+  ul {
+    margin-top: 5px;
+    li {
+      padding: 10px 0;
+      a {
+        color: inherit;
+        display: flex;
+        align-items: center;
+        i {
+          flex: 1;
+        }
+        span {
+          flex: 7;
+          margin-left: 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.right {
+  .block {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+// profile
+.profile {
+  p {
+    line-height: 1.5;
+  }
+  .personalAttributes {
+    display: flex;
+    li {
+      display: flex;
+      justify-content: center;
+      width: 20%;
+      .circle {
+        background-color: rgba(89, 108, 104, 0.5);
+        width: 100px;height:100px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        .p90, .p180, .p270, .p360 {
+          width: 50%;
+          height: 50%;
+          position: absolute;
+          background-color: $darkGreen;
+          left: 50%;
+        }
+        .p180 {
+          top: 50%;
+        }
+        .p270 {
+          top: 50%;
+          left: 0;
+        }
+        .p360 {
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+.inner-circle {
+  font-size: 12px;
+  text-transform: uppercase;
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  border-radius: 100%;
+  background-color: #fff;
+  color: $darkGreen;
+  font-weight: 500;
+  position: absolute;
+  index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Work, Education
+.work, .education {
+  ul {
+    li {
+      display: flex;
+      .year {
+        flex: 1;
+        padding-right: 30px;
+        p {
+          margin: 0;
+          font-size: 14px;
+          display: inline-block;
+          background-color: $darkGreen;
+          color: #fff;
+          padding: 5px 10px;
+          position: relative;
+          &::after {
+            content: '';
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: $darkGreen;
+            transform: rotate(45deg);
+            position: absolute;
+            right: -9px;
+            top: 4.5px;
+          }
+        }
+      }
+      .content {
+        flex: 8;
+        border-left: 1px solid $darkGreen;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        position: relative;
+        padding-top: 0;
+        &::before {
+          content: '';
+          display: block;
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          background-color: $darkGreen;
+          border-radius: 100%;
+          left: -5px;
+          top: 10px;
+        }
+        h5 {
+          margin: 0;
+          font-size: 1em;
+          text-transform: uppercase;
+          padding-top: 10px;
+        }
+        p {
+          margin: 0;
+          color: $darkGreen;
+          line-height: 1.4;
+        }
       }
     }
   }
