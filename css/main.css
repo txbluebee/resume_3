@@ -1,0 +1,123 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  padding: 50px 20px;
+  background-color: #eaeaea;
+  font-family: 'Montserrat', sans-serif; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.resume {
+  background-color: #fff;
+  border-radius: 15px;
+  max-width: 1000px;
+  font-weight: normal; }
+
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #E3D9CA;
+  background-color: #403F48;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-radius: 15px 15px 0 0; }
+  header h1 {
+    padding: 10px 30px;
+    letter-spacing: 5px;
+    font-size: 2em;
+    border: 2px solid #E3D9CA; }
+  header .subCaption {
+    letter-spacing: 5px;
+    margin-bottom: 5px; }
+  header hr {
+    border: none;
+    border-bottom: 2px solid #E3D9CA;
+    width: 20%; }
+
+.main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .main .left, .main .right {
+    padding: 20px; }
+  .main .left {
+    -webkit-box-flex: 3.5;
+    -webkit-flex: 3.5;
+    -ms-flex: 3.5;
+    flex: 3.5;
+    background-color: #E3D9CA; }
+  .main .right {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex: 6; }
+
+.block {
+  margin-bottom: 3em; }
+  .block h2 {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    margin: 0; }
+
+.left .profile-img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .left .profile-img img {
+    width: 100%;
+    border-radius: 50%; }
+
+.left .block {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.personal ul li, .contact ul li {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .personal ul li p:nth-child(1), .contact ul li p:nth-child(1) {
+    font-weight: 500;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4; }
+  .personal ul li p:nth-child(2), .contact ul li p:nth-child(2) {
+    font-weight: 400;
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex: 6; }
+  .personal ul li p, .contact ul li p {
+    font-size: 14px;
+    margin: 0; }

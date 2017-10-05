@@ -5,177 +5,195 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title Brian Fan 
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet")
     link(rel="stylesheet" href="css/main.css")
   body
-    header
-      h1.caption Brian Fan
-      .subCaption Web Developer
-      hr
-    .main
-      .left
-        .profile-img
-        .block.personal  
-          h2 Personal
-          ul
-            li name
-              span Brian Fan
-            li Birthday
-              span 1983/01/01  
-            li Relationship
-              span single  
-            li Nationailty
-              span USA  
-            li Languages
-              span English, Chinese
-        .block.contact  
-          h2 Contact
-          ul
-            li Mobile
-              span (469)426-2556
-            li Home
-                span (111)111-1111              
-            li Email
-              span kuomu.fan@gmail.com 
-            li Address
-              span 1234 5th Ave #611,
-                br 
-                |Seattle, WA 98121
-        .block.links  
-          h2 Links
-          ul
-            li 
-              a(href="https://github.com/txbluebee")
-                img(src="" alt="Github")
-                | www.github.com
-            li 
-              a(href="https://linkedin.com/in/brian-fan")
-                img(src="" alt="Linkedin")
-                | linkedin.com/in/brian-fan           
-            li 
-              a(href="https://facebook.com/txbluebee")
-                img(src="" alt="Facebook")
-                | facebook.com/txbluebee       
-            li 
-              a(href="https://codepen.com/txbluebee")
-                img(src="" alt="Codepen")
-                | codepen.com/txbluebee        
-      .right 
-        .block.profile
-          h2 Profile  
-          p I enjoy learning new things especially new technology. Through coding, I can constantly practice problemsolving and express my creativity. There is no better place for me to grow and challenge myself other than being a web developer.
+    .resume 
+      header
+        h1.caption Brian Fan
+        .subCaption Web Developer
+        hr
+      .main
+        .left
+          .profile-img
+            img(src="../img/fan.jpg")
+          .block.personal  
+            h2 Personal
+            ul
+              li 
+                p Name
+                p Brian Fan
+              li 
+                p Birthday
+                p 1983/01/23   
+              li 
+                p Nationailty
+                p USA  
+              li 
+                p Languages
+                p English, Chinese
+          .block.contact  
+            h2 Contact
+            ul
+              li 
+                p Mobile
+                p (469)426-2556
+              li 
+                p Home
+                p (469)426-2556             
+              li 
+                p Email
+                p kuomu.fan@gmail.com 
+              li 
+                p Address
+                p 2720 4th Ave #614,
+                  br 
+                  |Seattle, WA 98121
+          .block.links  
+            h2 Links
+            ul
+              li 
+                a(href="https://github.com/txbluebee")
+                  img(src="" alt="Github")
+                  | www.github.com
+              li 
+                a(href="https://linkedin.com/in/brian-fan")
+                  img(src="" alt="Linkedin")
+                  | linkedin.com/in/brian-fan           
+              li 
+                a(href="https://facebook.com/txbluebee")
+                  img(src="" alt="Facebook")
+                  | facebook.com/txbluebee       
+              li 
+                a(href="https://codepen.com/txbluebee")
+                  img(src="" alt="Codepen")
+                  | codepen.com/txbluebee        
+        .right 
+          .block.profile
+            h2 Profile  
+            p I enjoy learning new things especially new technology. Through coding, I can constantly practice problemsolving and express my creativity. There is no better place for me to grow and challenge myself other than being a web developer.
+            
+            ul.personalAttributes
+              li
+                .circle
+                  .inner-circle design
+              li
+                .circle
+                  .inner-circle concepts                
+              li
+                .circle
+                  .inner-circle direction                  
+              li
+                .circle
+                  .inner-circle teamwork
+              li
+                .circle
+                  .inner-circle management                  
+          .block.work
+            h2 Work
+            ul
+              li
+                .year 2017
+                .content
+                  h5 Web Developer Intern
+                  p Artemis Connection
+                  p Seattle, WA
+                .small-circle
+              li
+                .year 2015
+                .content
+                  h5 Bankruptcy Specialist
+                  p Ntt Data Consulting, Inc.
+                  p Farmer's Branch, TX
+                .small-circle                  
+              li
+                .year 2014
+                .content
+                  h5 Accounting Specialist
+                  p Bank of America
+                  p Plano, TX
+                .small-circle                
+              li
+                .year 2012
+                .content
+                  h5 Senior Operations Specialist
+                  p JP Morgan Chase & Co.
+                  p Seattle, WA
+                .small-circle                         
+              li
+                .year 2008
+                .content
+                  h5 United Commerce Centers
+                  p Staff Accountant
+                  p Irving, TX
+                .small-circle                      
+                     
           
-          ul.personalAttributes
-            li
-              .circle
-                .inner-circle design
-            li
-              .circle
-                .inner-circle concepts                
-            li
-              .circle
-                .inner-circle direction                  
-            li
-              .circle
-                .inner-circle teamwork
-            li
-              .circle
-                .inner-circle management                  
-        .block.work
-          h2 Work
-          ul
-            li
-              .year
-              .content
-                h5 Web Developer Intern
-                p Artemis Connection
-                p Seattle, WA
-              .small-circle
-            li
-              .year
-              .content
-                h5 Bankruptcy Specialist
-                p Ntt Data Consulting, Inc.
-                p Farmer's Branch, TX
-              .small-circle                  
-            li
-              .year
-              .content
-                h5 Accounting Specialist
-                p Bank of America
-                p Plano, TX
-              .small-circle                
-            li
-              .year
-              .content
-                h5 Senior Operations Specialist
-                p JP Morgan Chase & Co.
-                p Seattle, WA
-              .small-circle                         
-            li
-              .year
-              .content
-                h5 United Commerce Centers
-                p Staff Accountant
-                p Irving, TX
-              .small-circle                                  
-        .block.education 
-          h2 Education
-          ul 
-            li
-              .year
-              .content
-                h5 Web Development
-                p Epicodus
-                p JavaScript, Ruby on Rails Track
-              .small-circle                   
-            li
-              .year
-              .content
-                h5 MBA Accounting
-                p Dallas Baptist University
-              .small-circle  
-            li
-              .year
-              .content
-                h5 BA Public Finance
-                p National Taipei University
-              .small-circle  
-        .block.software
-          h2 Skills
-          ul
-            li HTML/CSS 
-              .bar
-                .value
-            li JavaScript 
-              .bar
-                .value
-            li Ruby On Rails
-              .bar
-                .value
-            li Angular/Node.js 
-              .bar
-                .value        
-            li Ajax/API
-              .bar
-                .value           
-            li SQL
-              .bar
-                .value   
-        .block.hobbies
-          h2 Hobbies
-          ul
-            li
-              .hobby-icon
-              | Movies        
-            li
-              .hobby-icon
-              | Outdoors         
-            li
-              .hobby-icon
-              | Programming
-            li
-              .hobby-icon
-              | Games            
-            li
-              .hobby-icon
-              | Music                
+          //
+            Education
+          .block.education 
+            h2 Education
+            ul 
+              li
+                .year 2017
+                .content
+                  h5 Web Development
+                  p Epicodus
+                  p JavaScript, Ruby on Rails Track
+                .small-circle                   
+              li
+                .year 2007
+                .content
+                  h5 MBA Accounting
+                  p Dallas Baptist University
+                .small-circle  
+              li
+                .year 2002
+                .content
+                  h5 BA Public Finance
+                  p National Taipei University
+                .small-circle  
+                
+          //
+            Software         
+          .block.software
+            h2 Skills
+            ul
+              li HTML/CSS 
+                .bar
+                  .value
+              li JavaScript 
+                .bar
+                  .value
+              li Ruby On Rails
+                .bar
+                  .value
+              li Angular/Node.js 
+                .bar
+                  .value        
+              li Ajax/API
+                .bar
+                  .value           
+              li SQL
+                .bar
+                  .value   
+          //
+            Hobbies     
+          .block.hobbies
+            h2 Hobbies
+            ul
+              li
+                .hobby-icon
+                | Movies        
+              li
+                .hobby-icon
+                | Outdoors         
+              li
+                .hobby-icon
+                | Programming
+              li
+                .hobby-icon
+                | Games            
+              li
+                .hobby-icon
+                | Music                
