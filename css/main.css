@@ -320,7 +320,7 @@ header {
     font-size: 14px;
     font-weight: 500; }
     .program ul li .bar {
-      border: 1px solid #95A792;
+      border: 2px solid #95A792;
       height: 15px;
       width: 250px;
       border-radius: 5px;
