@@ -279,3 +279,66 @@ header {
     }
   }
 }
+
+// Program
+.program {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 500;
+      .bar {
+        border: 1px solid $lightGreen;
+        height: 15px;
+        width: 250px;
+        border-radius: 5px;
+        margin-top: 5px;
+        .value{
+          height: 100%;
+          width: 100%;
+          background-color: $lightGreen;
+        }
+        .v90 {
+          width: 90%;
+        }
+        .v80 {
+          width: 80%;
+        }
+        .v70 {
+          width: 70%;
+        }
+        .v85 {
+          width: 85%;
+        }
+        .v65 {
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+// Hobbies
+.hobbies {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    li {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: $darkGreen;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

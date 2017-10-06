@@ -292,3 +292,81 @@ header {
       margin: 0;
       color: #596C68;
       line-height: 1.4; }
+
+.program ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .program ul li {
+    width: 50%;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500; }
+    .program ul li .bar {
+      border: 1px solid #95A792;
+      height: 15px;
+      width: 250px;
+      border-radius: 5px;
+      margin-top: 5px; }
+      .program ul li .bar .value {
+        height: 100%;
+        width: 100%;
+        background-color: #95A792; }
+      .program ul li .bar .v90 {
+        width: 90%; }
+      .program ul li .bar .v80 {
+        width: 80%; }
+      .program ul li .bar .v70 {
+        width: 70%; }
+      .program ul li .bar .v85 {
+        width: 85%; }
+      .program ul li .bar .v65 {
+        width: 65%; }
+
+.hobbies ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .hobbies ul li {
+    width: 20%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .hobbies ul li i {
+      color: #596C68;
+      margin-bottom: 8px; }
